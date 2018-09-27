@@ -1,0 +1,4 @@
+<TabView androidTabsPosition="bottom" class="fa" tabTextFontSize="20" (loaded)="onTabViewLoaded($event)">
+	<page-router-outlet *tabItem="{ title: 'cmd' }" name="cmdTab"></page-router-outlet>
+	<page-router-outlet *tabItem="{ title: 'initial' }" name="initialTab"></page-router-outlet>
+</TabView>

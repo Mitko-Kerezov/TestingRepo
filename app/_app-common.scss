@@ -1,0 +1,33 @@
+@import "app-variables";
+
+.fa {
+  font-family: "FontAwesome";
+}
+
+.hidden {
+  visibility: collapsed;
+}
+
+// SideDrawer
+.side-drawer-container {
+  background-color: $side-drawer-background-color;
+
+  .side-drawer-list {
+    padding-top: 20;
+
+    .side-drawer-list-item {
+      padding-left: 15;
+      margin-bottom: 30;
+    }
+
+    .side-drawer-list-item Label {
+      vertical-align: center;
+      color: $side-drawer-label-color;
+    }
+
+    .side-drawer-list-item .fa {
+      width: 20;
+      margin-right: 10;
+    }
+  }
+}

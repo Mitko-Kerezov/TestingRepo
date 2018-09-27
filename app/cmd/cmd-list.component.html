@@ -1,0 +1,17 @@
+<ActionBar title="">
+	<ActionItem text="Create" ios.position="right" (tap)="createTapped()"></ActionItem>
+</ActionBar>
+<GridLayout backNavigation>
+	<RadListView  *ngIf="(myItems | async) as items; else loading" [items]="items">
+	       <ng-template let-item="item">
+	        <StackLayout padding="10" (tap)="onItemTap(item)">
+	            <Label text="Name"></Label>
+	            <Label text="{{ item.name }}"></Label>
+	        </StackLayout>
+	    </ng-template>
+	</RadListView >
+	
+	<ng-template #loading>
+	    <ActivityIndicator [busy]="true"></ActivityIndicator>
+	</ng-template>
+</GridLayout>

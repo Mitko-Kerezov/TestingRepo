@@ -1,0 +1,69 @@
+{
+    "isReadOnly": false,
+    "commitMode": "Immediate",
+    "validationMode": "Immediate",
+    "propertyAnnotations": [
+        {
+            "name": "_id",
+            "ignore": true
+        },
+        {
+            "name": "_acl",
+            "ignore": true
+        },
+        {
+            "name": "cust_id",
+            "ignore": true
+        },
+        {
+            "name": "_kmd",
+            "ignore": true
+        },
+        {
+            "name": "Name",
+            "displayName": "Name",
+            "editor": "Text",
+            "index": 0,
+            "validators": []
+        },
+        {
+            "name": "Type",
+            "displayName": "Type",
+            "editor": "Text",
+            "index": 1,
+            "validators": []
+        },
+        {
+            "name": "Id",
+            "displayName": "Id",
+            "editor": "Phone",
+            "index": 2,
+            "validators": [
+                {
+                    "name": "PhoneValidator"
+                }
+            ]
+        },
+        {
+            "name": "Text",
+            "displayName": "Text",
+            "editor": "Text",
+            "index": 3,
+            "validators": []
+        },
+        {
+            "name": "custom;column",
+            "displayName": "CustomColumn",
+            "editor": "Text",
+            "index": 4,
+            "validators": []
+        },
+        {
+            "name": "spacey column",
+            "displayName": "SpaceyColumn",
+            "editor": "Number",
+            "index": 5,
+            "validators": []
+        }
+    ]
+}

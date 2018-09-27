@@ -1,0 +1,84 @@
+{
+    "isReadOnly": false,
+    "commitMode": "Immediate",
+    "validationMode": "Immediate",
+    "propertyAnnotations": [
+        {
+            "name": "_id",
+            "ignore": true
+        },
+        {
+            "name": "chartData",
+            "ignore": true
+        },
+        {
+            "name": "_acl",
+            "ignore": true
+        },
+        {
+            "name": "empty_id",
+            "ignore": true
+        },
+        {
+            "name": "_kmd",
+            "ignore": true
+        },
+        {
+            "name": "name",
+            "displayName": "Name",
+            "editor": "Text",
+            "index": 0,
+            "validators": []
+        },
+        {
+            "name": "salary",
+            "displayName": "Salary",
+            "editor": "Number",
+            "index": 1,
+            "validators": []
+        },
+        {
+            "name": "loyal",
+            "displayName": "Loyal",
+            "editor": "Switch",
+            "index": 2,
+            "validators": []
+        },
+        {
+            "name": "added",
+            "displayName": "Added",
+            "editor": "Text",
+            "index": 3,
+            "validators": []
+        },
+        {
+            "name": "username",
+            "displayName": "Username",
+            "editor": "Email",
+            "index": 4,
+            "validators": [
+                {
+                    "name": "EmailValidator"
+                }
+            ]
+        },
+        {
+            "name": "phone",
+            "displayName": "Phone",
+            "editor": "Phone",
+            "index": 5,
+            "validators": [
+                {
+                    "name": "PhoneValidator"
+                }
+            ]
+        },
+        {
+            "name": "empty_id",
+            "displayName": "EmptyId",
+            "editor": "Text",
+            "index": 6,
+            "validators": []
+        }
+    ]
+}

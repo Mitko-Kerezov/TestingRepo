@@ -1,0 +1,12 @@
+<ActionBar title="">
+	<ActionItem text="Submit" ios.position="right" (tap)="submitForm()"></ActionItem>
+</ActionBar>
+<GridLayout backNavigation>
+	<ng-container *ngIf="item else loading">
+	    <RadDataForm #formObject [source]="item" [metadata]="metadata"></RadDataForm>
+	</ng-container>
+	
+	<ng-template #loading>
+	    <ActivityIndicator [busy]="true"></ActivityIndicator>
+	</ng-template>
+</GridLayout>

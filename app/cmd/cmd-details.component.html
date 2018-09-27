@@ -1,0 +1,16 @@
+<ActionBar title="">
+	<ng-container *ngIf="(item | async) as item">
+		<ActionItem text="Edit" ios.position="right" (tap)="editTapped(item._id)"></ActionItem>
+		<ActionItem text="Place" ios.position="right" (tap)="placeTapped(item._id)"></ActionItem>
+	</ng-container>
+</ActionBar>
+<GridLayout backNavigation>
+	<StackLayout *ngIf="(item | async) as item; else loading">
+	    <Label text="Salary"></Label>
+	    <Label text="{{ item.salary }}"></Label>
+	</StackLayout>
+	
+	<ng-template #loading>
+	    <ActivityIndicator [busy]="true"></ActivityIndicator>
+	</ng-template>
+</GridLayout>
